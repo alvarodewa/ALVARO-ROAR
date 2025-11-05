@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TREDICT ALVARO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<canvas id="particle-canvas"></canvas>
+
+<div class="wrap">
+  <!-- LOGIN CARD -->
+  <div class="card" id="loginCard">
+    <div class="app-title">TREDICT Alvaro</div>
+    <div class="sub">Login</div>
+
+    <input id="inUser" type="text" placeholder="Username" value="" />
+    <input id="inPass" type="password" placeholder="Password" value="" />
+    <button id="btnLogin" class="big-btn">⇢ Masuk</button>
+
+    <div class="footer">Author: <strong>Alvaro</strong> · Support: <strong>Andita</strong></div>
+  </div>
+
+  <!-- DASHBOARD CARD -->
+  <div class="card dashboard" id="dashCard">
+    <div class="app-title">TREDICT ALVARO</div>
+    <div style="margin-top:4px">
+      <span class="connected"><span id="connectedText" class="typing">● </span><span class="cursor" aria-hidden="true"></span></span>
+    </div>
+
+    <input id="phone" type="text" placeholder="example : 62xxxx" />
+    <select id="menuSelect">
+      <option>Menu Bug</option>
+      <option>CRASH ANDROID</option>
+      <option>FC HARD</option>
+      <option>DELAY INVISIBLE</option>
+      <option>FC CLICK</option>
+    </select>
+
+    <button id="btnSend" class="big-btn" style="margin-top:14px">➤ SEND</button>
+
+    <div class="row">
+      <button id="btnDev" class="small">Developer</button>
+      <button id="btnLogout" class="small">Logout</button>
+    </div>
+
+    <div class="footer" style="margin-top:12px">beta · <span id="dateText"></span></div>
+  </div>
+</div>
+
+<!-- Popup -->
+<div id="popup" class="popup" aria-hidden="true">✅ PROCESS COMPLETED — NO TARGET DETECTED ⚡</div>
+
+<!-- Developer modal -->
+<div id="modalBack" class="modal-back">
+  <div class="modal" role="dialog" aria-modal="true">
+    <div class="item" data-value="Menu Bug">Menu Bug <span class="radio"></span></div>
+    <div class="item" data-value="CRASH ANDROID">CRASH ANDROID <span class="radio"></span></div>
+    <div class="item" data-value="FC HARD">FC HARD <span class="radio"></span></div>
+    <div class="item" data-value="DELAY INVISIBLE">DELAY INVISIBLE <span class="radio"></span></div>
+    <div class="item" data-value="FC CLICK">FC CLICK <span class="radio"></span></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
