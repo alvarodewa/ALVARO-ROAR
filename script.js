@@ -1,4 +1,4 @@
-const CRED = { user: 'andita', pass: 'alvaro' };
+const CRED = { user: 'alvaro', pass: 'tredict' };
 
 const loginCard = document.getElementById('loginCard');
 const dashCard = document.getElementById('dashCard');
